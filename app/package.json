@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@rocketseat/unform": "^1.6.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "history": "^4.10.1",
@@ -15,7 +16,8 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
     "reactotron-react-js": "^3.3.7",
-    "styled-components": "^5.0.0"
+    "styled-components": "^5.0.0",
+    "yup": "^0.28.1"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -41,7 +43,9 @@
     "moduleNameMapper": {
       "^~/(.*)": "<rootDir>/src/$1"
     },
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "moduleFileExtensions": [
       "web.js",
       "js",
