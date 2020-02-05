@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "history": "^4.10.1",
     "i18next": "^19.1.0",
     "polished": "^3.4.4",
@@ -13,9 +15,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
     "reactotron-react-js": "^3.3.7",
-    "styled-components": "^5.0.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2"
+    "styled-components": "^5.0.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -25,7 +25,9 @@
     "lint": "eslint --ext .jsx --ext src/*.js"
   },
   "jest": {
-    "setupFilesAfterEnv": ["<rootDir>src/setupTests.js"],
+    "setupFilesAfterEnv": [
+      "<rootDir>src/setupTests.js"
+    ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/**/*.d.ts"
@@ -39,6 +41,7 @@
     "moduleNameMapper": {
       "^~/(.*)": "<rootDir>/src/$1"
     },
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "moduleFileExtensions": [
       "web.js",
       "js",
@@ -71,6 +74,7 @@
     "babel-eslint": "^10.0.3",
     "babel-plugin-root-import": "^6.4.1",
     "customize-cra": "^0.9.1",
+    "enzyme-to-json": "^3.4.4",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.5.0",
@@ -83,6 +87,7 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "jest": "^24.9.0",
     "jest-enzyme": "^7.1.1",
+    "jest-styled-components": "^7.0.0",
     "prettier": "^1.18.2",
     "react-app-rewired": "^2.1.5"
   }

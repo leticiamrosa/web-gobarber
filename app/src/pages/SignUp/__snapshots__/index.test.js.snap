@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUp component should renders component without crashing 1`] = `
+<Fragment>
+  <img
+    alt=""
+    src="logo.svg"
+  />
+  <form>
+    <input />
+    <input
+      type="email"
+    />
+    <input
+      type="password"
+    />
+    <button
+      type="submit"
+    />
+    <Link
+      to="/"
+    />
+  </form>
+</Fragment>
+`;
