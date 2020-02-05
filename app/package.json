@@ -1,59 +1,89 @@
 {
-	"name": "app",
-	"version": "0.1.0",
-	"private": true,
-	"dependencies": {
-		"@testing-library/jest-dom": "^4.2.4",
-		"@testing-library/react": "^9.3.2",
-		"@testing-library/user-event": "^7.1.2",
-		"history": "^4.10.1",
-		"i18next": "^19.1.0",
-		"polished": "^3.4.4",
-		"prop-types": "^15.7.2",
-		"react": "^16.12.0",
-		"react-dom": "^16.12.0",
-		"react-i18next": "^11.3.1",
-		"react-router-dom": "^5.1.2",
-		"react-scripts": "3.3.0",
-		"reactotron-react-js": "^3.3.7",
-		"styled-components": "^5.0.0"
-	},
-	"scripts": {
-		"start": "react-app-rewired start",
-		"build": "react-app-rewired build",
-		"test": "react-app-rewired test",
-		"eject": "react-app-rewired eject",
-		"lint": "eslint --ext .jsx --ext src/*.js"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"devDependencies": {
-		"babel-eslint": "^10.0.3",
-		"babel-plugin-root-import": "^6.4.1",
-		"customize-cra": "^0.9.1",
-		"eslint": "^6.8.0",
-		"eslint-config-airbnb": "^18.0.1",
-		"eslint-config-prettier": "^6.5.0",
-		"eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
-		"eslint-plugin-import": "^2.20.1",
-		"eslint-plugin-jsx-a11y": "^6.2.3",
-		"eslint-plugin-prettier": "^3.1.1",
-		"eslint-plugin-react": "^7.18.3",
-		"eslint-plugin-react-hooks": "^1.7.0",
-		"prettier": "^1.18.2",
-		"react-app-rewired": "^2.1.5"
-	}
+  "name": "gobarber",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "history": "^4.10.1",
+    "i18next": "^19.1.0",
+    "polished": "^3.4.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-i18next": "^11.3.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "reactotron-react-js": "^3.3.7",
+    "styled-components": "^5.0.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "lint": "eslint --ext .jsx --ext src/*.js"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["<rootDir>src/setupTests.js"],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
+    ],
+    "moduleNameMapper": {
+      "^~/(.*)": "<rootDir>/src/$1"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-root-import": "^6.4.1",
+    "customize-cra": "^0.9.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^24.9.0",
+    "jest-enzyme": "^7.1.1",
+    "prettier": "^1.18.2",
+    "react-app-rewired": "^2.1.5"
+  }
 }
