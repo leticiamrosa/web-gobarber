@@ -10,7 +10,6 @@ describe('Renders App component', () => {
     //given
     //when
     const wrapper = shallow(<App />);
-    // const appComponent = wrapper.find("[data-test='apollo-provider'");
     expect(wrapper.length).toBe(1);
     //then
   })
