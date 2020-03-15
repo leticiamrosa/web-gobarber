@@ -21,7 +21,7 @@ export default function auth(state = INITIAL_STATE, action) {
         break;
       }
       case '@auth/SIGN_ERROR': {
-        draft.loading = true;
+        draft.loading = false;
         draft.error = true;
         break;
       }
