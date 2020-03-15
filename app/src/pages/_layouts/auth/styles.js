@@ -41,6 +41,9 @@ export const Content = styled.div`
     }
 
     button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin: 5px 0 0;
       height: 44px;
       background: #3b9eff;
