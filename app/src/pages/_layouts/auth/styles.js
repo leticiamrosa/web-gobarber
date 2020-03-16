@@ -1,9 +1,14 @@
 import styled from 'styled-components';
+import { colors } from '~/styles/styles';
 import { darken } from 'polished';
 
 export const Wrapper = styled.div`
   height: 100vh;
-  background: linear-gradient(-90deg, #7159c1, #ab59c1);
+  background: linear-gradient(
+    -90deg,
+    ${colors.primary.main},
+    ${colors.primary.variant}
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +39,7 @@ export const Content = styled.div`
     }
 
     span {
-      color: #fb6f91;
+      color: ${colors.error};
       align-self: flex-start;
       margin: 0 0 10px;
       font-weight: 600;
@@ -46,7 +51,7 @@ export const Content = styled.div`
       align-items: center;
       margin: 5px 0 0;
       height: 44px;
-      background: #3b9eff;
+      background: ${colors.secondary.main};
       border: 0;
       border-radius: 4px;
       font-size: 16px;
@@ -54,7 +59,7 @@ export const Content = styled.div`
       transition: background 0.2;
 
       &:hover {
-        background: ${darken(0.03, '#3b9eff')};
+        background: ${darken(0.03, colors.secondary.main)};
       }
     }
 
